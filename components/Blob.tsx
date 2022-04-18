@@ -59,8 +59,8 @@ export default function Blob({
             near={0.4854}
             far={0.7661999999999932}
             origin={[-0.4920000000000004, 0.4250000000000003, 0]}
-            colorA={'#fec5da'}
-            colorB={'#a259de'}
+            colorA={'#ff8b38'}
+            colorB={'#eff97e'}
           />
           <Displace ref={displaceRef} strength={0} scale={6} offset={[0, 0, 0]} />
           <Fresnel

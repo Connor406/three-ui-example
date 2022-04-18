@@ -29,14 +29,14 @@ function App() {
             transition: 'opacity 200ms ease-in-out',
           }}
         >
-          <color args={['#cd3ae3']} attach="background" />
+          <color args={['#252525']} attach="background" />
 
           <Suspense fallback={null}>
             <Blob position={[0, 1, 0]} scale={[2, 2, 2]} setLoaded={setLoaded} />
           </Suspense>
           <Lighting />
 
-          <gridHelper args={[200, 100, '#1100ff', '#1100ff']} position={[0, -1.26, 0]} />
+          <gridHelper args={[200, 100, '#efc657', '#efc657']} position={[0, -1.26, 0]} />
           <OrbitControls
             enablePan={false}
             minZoom={90}
