@@ -6,6 +6,7 @@ import { Canvas } from '@react-three/fiber'
 import { Loader, OrbitControls } from '@react-three/drei'
 import { Debug, Physics } from '@react-three/cannon'
 import Shader from '@/components/Shader'
+import Cube from '@/components/Raycaster'
 
 // const Bunny = dynamic(() => import('@/components/Bunny'))
 
@@ -41,14 +42,18 @@ function App() {
       >
         <Suspense fallback={null}>
           <Physics>
-            {/* <Blob position={[0, 1, 0]} scale={[2, 2, 2]} /> */}
+            {/* THE IDEA: Combine mouse logic from <Cube /> with Lamina effect from <Blob /> */}
+            {/* <Blob position={[0, 1, -1.5]} scale={[2, 2, 2]} /> */}
             {/* <Bunny /> */}
             <Shader />
+            {/* <Cube position={[0, 1, -1]} /> */}
+            {/* <Cube position={[2, 1, -1]} /> */}
+            {/* <Cube position={[-2, 1, -1]} /> */}
           </Physics>
         </Suspense>
         <Lighting />
 
-        <OrbitControls enableDamping />
+        {/* <OrbitControls enableDamping /> */}
       </Canvas>
 
       <Loader />

@@ -66,14 +66,14 @@ export default function Blob({
               colorB={'#eff97e'}
             />
             <Displace ref={displaceRef} strength={0} scale={6} offset={[0, 0, 0]} />
-            <Fresnel
+            {/* <Fresnel
               color={'#fefefe'}
               bias={-0.3430000000000002}
               intensity={3.8999999999999946}
               power={3.3699999999999903}
               factor={1.119999999999999}
               mode={'screen'}
-            />
+            /> */}
           </LayerMaterial>
         </Sphere>
       </Physics>
